@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.about{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem;
+}
+
+.wormHole{
+  position: absolute;
+  left: -300px;
+  top: -120px;
+  z-index: 0;
+}
+
+.about__picture{
+  width: 600px;
+    background-color: rgba(255, 255, 255, 0.164);
+    backdrop-filter: blur(5px); /* Apply a blur effect to create the glass effect */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.288);
+}
+
+#profile:hover{
+  transform: scale(0.9);
+}
+
+#profile{
+  width: 600px;
+  transition: 0.4s ease-in-out;
+}
+
+.about__content{
+    width: 100%;
+    margin: 0 5rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: -2rem;
+}
+
+.about__content h1{
+    color: white;
+    font-size: 5rem;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.about__content p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-top: -1.25rem;
+}
+.about__subheading{
+    display: flex;
+    flex-direction: column;
+}
+
+.about__subheading--menu ul{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    margin-left: -2.5rem;
+}
+
+.about__subheading--menu ul li{
+    color: white;
+    font-size: 1.1rem;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    padding: 0 .5rem 5px .5rem;
+}
+
+  .about__subheading--menu ul li:hover{
+    transform: scale(1.1);
+    color:#0087ca;
+  }
+ 
+  .about__subheading--menu ul li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .about__subheading--menu ul li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .active{
+    border-bottom: 2px solid #0087ca;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 7rem;
+  }
+
+  .gridSkill{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
+  .col-span-4{
+    grid-column: span 4 / span 4;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+
+
+  .col-span-1 h4{
+    color:white;
+  }
+
+.col-span-4 span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 100%;
+    font-size: .25rem;
+    font-weight: bold;
+    
+}
+
+.col-span-4:hover{
+    transform: scale(1.1);
+}
+
+.experiencePage, .schoolPage{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 300px;
+    padding: 2rem 0;
+    width: 100%;
+}
+.school{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  margin: 5px 30px 5px 30px;
+  font-family: 'Roboto', sans-serif;
+  gap: 20px;
+  border-radius: 20px;
+  border-bottom: 1px solid white;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.school-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+    margin: 5px 30px 5px 30px;
+    font-family: 'Roboto', sans-serif;
+    gap: 10px;
+    border-radius: 20px;
+    border-bottom: 1px solid white;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.experience:hover, 
+.school:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #0087ca;
+    background-color: rgba(255, 255, 255, 0.137);
+}
+
+.experience span,
+.school span{
+    color:#0087ca;
+    font-weight: bold;
+}
+
+.experience h1, 
+.school h1{
+    color:white;
+    font-size: 2rem;
+    text-align: left;
+    margin-top: -4px;
+    border: none;
+}
+
+.experience p,
+.school p{
+    font-size: 1rem;
+}
+
+.school .school-header .school-add{
+  font-size: 16px;
+  color: #0087ca;
+}
+
+
+.fillWater {
+    background-size: 200% 200%;
+    background-image: linear-gradient(to top, #76daff 50%, transparent 50%);
+    background-clip: text; /* Clip the background to the text content */
+    color: white; /* Make the text transparent to show the background */
+    cursor: pointer;
+    transition: background-position 3000ms, color 3000ms ease, border-color 3000ms ease;
+  }
+  
+  .fillWater:hover {
+    color: transparent;
+    background-image: linear-gradient(to top, #76daff 51%, transparent 50%);
+    background-position: 0 100%;
+    transition: background-position 3000ms, color 3000ms ease, border-color 3000ms ease;
+  }
+  

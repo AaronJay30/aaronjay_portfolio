@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+a{
+    text-decoration: none; 
+    color: white;
+}
+
+.navbar.scrolled {
+    background-color: rgb(5, 0, 0); /* Background color for scrolled navbar */
+    height: 100%; /* Adjust the height as needed for the scrolled navbar */
+    transition: background-color 0.3s, height 0.3s; /* Add transitions for smooth effects */
+    padding: 2rem 0rem 4rem .5rem;
+    transition: 0.6s ease-in-out;
+  }
+  
+
+.navbar{
+  font-family: 'Roboto', sans-serif;
+    position: fixed;
+    padding: 2rem 0rem 0rem 1.25rem;
+    top: 0;
+    z-index: 10;
+    direction: flex;
+    flex-direction: column;
+    color: white;
+    transition: 0.6s ease-in-out;
+}
+
+.navbar__logo span{
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: flex;
+    letter-spacing: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.navbar__menu {
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0 0 0;
+    display: flex;
+    gap: 3rem;
+    font-weight: 400;
+    flex-direction: column; /* Stack list items vertically */
+  }
+  
+  .navbar__menu li {
+    transform: rotate(90deg); /* Rotate list items 90 degrees clockwise */
+    transform-origin: center; /* Set the rotation origin to the center */
+    padding: 10px; /* Adjust the padding as needed */
+    transition: 0.3s ease-in-out;
+    font-size: 1rem;
+  }
+
+  .navbar__menu li:hover{
+    color:#76daff;
+    transform: rotate(90deg) scale(1.1) ; /* Rotate list items 90 degrees clockwise */
+
+  }
+  
+  .navbar__socials {
+    position: fixed;
+    bottom: 1.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    gap: 2rem;
+    font-weight: 400;
+    flex-direction: column;
+    margin: 0 0 0 1.5rem; 
+    padding: 0; 
+  }
+
+  .navbar__socials li {
+    transition: 0.2s ease-in-out;
+  }
+
+  .navbar__socials li:hover{
+    color:#1dafe4;
+    transform: scale(1.2) ; /* Rotate list items 90 degrees clockwise */
+
+  }
+  .fillWater {
+    font-size: 2rem; /* Adjust the font size as needed */
+    background-size: 200% 200%;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, #76daff 50%, transparent 50%);
+    background-clip: text; /* Clip the background to the text content */
+    color: white; /* Make the text transparent to show the background */
+    transition: background-position 3000ms, color 3000ms ease, border-color 3000ms ease;
+  }
+  
+  .fillWater:hover {
+    color: transparent;
+    background-image: linear-gradient(to top, #76daff 51%, transparent 50%);
+    background-position: 0 100%;
+    transition: background-position 3000ms, color 3000ms ease, border-color 3000ms ease;
+  }
+  
+  
+  

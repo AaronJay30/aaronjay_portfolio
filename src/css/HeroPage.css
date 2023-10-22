@@ -1,0 +1,155 @@
+/* .hero__bg--stars, .hero__bg--twinkling, .hero__bg--clouds {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+} */
+/* .hero__bg--stars {
+    z-index: 0;
+    background: #000000 url("/public/asset/stars.png") repeat top center;
+}
+.hero__bg--twinkling {
+    z-index: 1;
+    background: transparent url("/public/asset/twinkle.png") repeat top center;
+    animation: move-twink-back 200s linear infinite;
+}
+.hero__bg--clouds {
+    z-index: 2;
+    background: transparent url("/public/asset/clouds.png") repeat top center;
+    animation: move-clouds-back 200s linear infinite;
+}
+@keyframes move-twink-back {
+    from {
+        background-position: 0 0;
+   }
+    to {
+        background-position: -10000px 5000px;
+   }
+}
+@keyframes move-clouds-back {
+    from {
+        background-position: 0 0;
+   }
+    to {
+        background-position: 10000px 0;
+   }
+} */
+
+.hero__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    margin-left: 20rem;
+    height: 100vh;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero__content--name{
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.hero__content--title-holder{
+    display: flex;
+    flex-direction: row;
+}
+
+.hero__content--title{
+    font-weight: 900;
+    font-size: 5rem;
+    margin-top: -.3rem;
+}
+
+.hero__content--title-line{
+    height: 2px; /* Adjust the thickness of the line as needed */
+    width: 30%; /* Adjust the length of the line as needed */
+    background-color: #ffffff81; /* Adjust the color of the line as needed */
+    margin: 2.75rem 0 0 1rem;       
+}
+
+.hero__content--subtitle{
+    color: #038fc2;
+    font-weight: 900;
+    font-size: 5rem;
+    margin-top: -4rem;
+
+}
+
+
+.hero__content--subtitle span{
+    color: white;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+.enter {
+    overflow: hidden;
+    animation: typing 3s steps(30, end);
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.blinking-line {
+    display: inline-block;
+    width: 6px; 
+    height: 4rem;
+    margin-left: 5px;     
+    background-color: white;
+    animation: blink 1s infinite;
+}
+
+.blinking-line.hidden {
+    display: none;
+}
+  
+.hero__earth{
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 20;
+}
+
+.hero__earth img {
+    position: absolute; /* Use absolute positioning to overlay the image */
+    top: 0;
+    overflow-x: hidden;
+    right: -35rem; /* Position the image at the top-right corner */
+    height: 100vh; /* Set the image height to 50% of the viewport height */
+    z-index: 1;
+    transition: 0.9s ease-in-out;
+    cursor: pointer;
+    border-radius: 110%;
+
+}
+
+.hero__earth img:hover {
+    transform: scale(1.1);
+    box-shadow: inset 0 0 10rem rgba(3, 143, 194, 0.8);
+}
+  
+  
+  
+
