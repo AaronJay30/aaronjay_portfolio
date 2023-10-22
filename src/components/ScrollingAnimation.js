@@ -22,7 +22,7 @@ function ScrollingAnimation({inset, direction}) {
 
     return (
       <div className={direction === 'RTL' ? 'scrolling-animation-right' : 'scrolling-animation-left'} style={{ transform: `translateX(${direction === 'RTL' ? '-' : ''}${animationDistance}%)`}}>
-            <img src='/asset/interstellar-ship.png' alt='interstellar ship'></img>
+            <img src={process.env.PUBLIC_URL + '/asset/interstellar-ship.png'} alt='interstellar ship'></img>
       </div>
     );
   }

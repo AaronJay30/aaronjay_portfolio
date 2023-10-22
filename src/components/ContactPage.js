@@ -15,7 +15,7 @@ const ContactPage = () => {
     <div className='contact' data-aos="fade-up"
     data-aos-offset="300"
     data-aos-easing="ease-in-sine">
-        <img src='/asset/blackhole-unscreen.gif' alt='blackhole'></img>
+        <img src={process.env.PUBLIC_URL + '/asset/blackhole-unscreen.gif'} alt='blackhole'></img>
         <div className='contact__container' data-aos="flip-up" data-aos-offset="300" data-aos-duration="700">
           <span>Aaron Jay Gabato</span>
           <h1 className='fillWater'>CALL ME MAYBE?</h1>

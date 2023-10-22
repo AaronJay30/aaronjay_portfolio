@@ -16,11 +16,11 @@ const AboutPage = () => {
 
   return (
     <div className='sample about'>
-      <div className='wormHole'>
-        <img src='/asset/wormhole.gif' alt='wormhole'></img>
+      <div className='wormHole'> 
+        <img src={process.env.PUBLIC_URL + '/asset/wormhole.gif'} alt='wormhole'></img>
       </div>
       <div className='about__picture' data-aos="fade-up-right">
-        <img src='/asset/profile.gif' alt='Profile Picture' id='profile'></img>
+        <img src={process.env.PUBLIC_URL + '/asset/profile.gif'} alt='Profile Picture' id='profile'></img>
       </div>
       <div className='about__content' data-aos="zoom-in" data-aos-duration='500'>
         <h1 className='fillWater'>About Me</h1>

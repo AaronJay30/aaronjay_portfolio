@@ -57,7 +57,7 @@ function HeroPage() {
       </div>
       <div className="hero__earth">
         <a href='https://www.youtube.com/watch?v=21X5lGlDOfg' target='_blank'>
-          <img src='/asset/globe.gif' alt='Earth_Spinning' />
+          <img src={process.env.PUBLIC_URL + '/asset/globe.gif'} alt='Earth_Spinning' />
         </a>
       </div>
     </div>

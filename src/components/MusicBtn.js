@@ -9,7 +9,7 @@ class MusicBtn extends Component {
     this.state = {
        isMute: true 
     };
-    this.url = "/asset/bg.mp3";
+    this.url = process.env.PUBLIC_URL + '/asset/bg.mp3';
     this.audio = new Audio(this.url);
     this.audio.loop = true;
   }
