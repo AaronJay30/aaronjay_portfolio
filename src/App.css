@@ -14,6 +14,28 @@
     backdrop-filter: blur(10px);
 }
 
+.hidden{
+    display: none;
+}
+
+.responsive_message_container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    z-index: 100;
+}
+
+.responsive_message{
+    z-index: 100;
+    color: white;
+    font-size: 30px;
+    padding: 10rem;
+    text-align: center;
+    font-weight: 300;
+}
+
 .footer__info{
     display: flex;
     flex-direction: row;
