@@ -16,9 +16,23 @@ const ProjectPage = () => {
       <h1 className='fillWater'>My Projects</h1>
       <div className='project__card_container'>
 
+          <Projects year="2023" title="TagMyHerd" img={process.env.PUBLIC_URL + '/asset/RFID.png'} tags="Laravel, PHP, Tailwind, Ajax, RFID, Python"> 
+          I developed an online inventory system for a capstone project titled "TagMyHerd: RFID Based Recording System for Goats and Sheep Towards a Smart Livestock Farm." This system, designed specifically for goats and sheep, incorporates RFID technology to facilitate the effortless input and tracking of activity data for different batches of livestock, simplifying the overall management process
+          </Projects>
+
+          <Projects year="2023" title="Rotten Popcorn" img={process.env.PUBLIC_URL + '/asset/rotten.png'} tags="Laravel, PHP, Tailwind, Ajax"> 
+          Rotten Popcorn is an exciting online hub for movie lovers to immerse themselves in the world of cinema. Here, you can rate, review, and delve into lively discussions about your favorite films. With a user-friendly interface, Rotten Popcorn encourages you to share your unique perspectives through detailed reviews and ratings, fostering a vibrant community of film enthusiasts. Explore an extensive library of movies, read insightful comments from fellow cinephiles, and add your own thoughts on the latest blockbusters or timeless classics. Whether you’re hunting for recommendations or eager to share your cinematic journey, Rotten Popcorn is your ultimate destination for all things movies.
+          </Projects>
+
           <Projects year="2023" title="Traffic Management System" img={process.env.PUBLIC_URL + '/asset/traffic.png'} tags="Laravel, PHP, Tailwind, Responsive"> 
           My first Laravel project, the Traffic Management System, is a testament to innovation and problem-solving. This web application doesn't just monitor the number of active COVID cases but takes it a step further by dynamically rerouting traffic when danger arises. By seamlessly blending technology and public safety, this project showcases my commitment to creating solutions that have a real impact on society. It marks the beginning of my journey into Laravel development and represents the potential for technology to shape a safer and more efficient world.
           </Projects>
+
+  
+          <Projects year="2022" title="Vaccination Management System" img={process.env.PUBLIC_URL + '/asset/vms.png'} tags="Bootstrap, PHP, Scrum Agile"> 
+          I developed a vaccination management system for Oceans of Knowledge School, allowing for the verification of student vaccination status. This system grants the principal access to and management capabilities for vaccination data, ensuring a comprehensive and organized approach to health records within the school community
+          </Projects>
+
 
           <Projects year="2021-2022" title="Midterm Project (Tick.It)" img={process.env.PUBLIC_URL + '/asset/tickit.png'} tags="HTML, CSS, Bootstrap, Javascript"> 
           Introducing TickIt, your go-to movie ticket reservation website that transforms your cinema outings into unforgettable experiences. With TickIt, booking tickets for the latest blockbuster has never been easier. But we don't stop there—our platform offers an array of enticing add-ons, from buttery popcorn to sizzling hotdogs, to enhance your movie night. Stay updated with the freshest film releases, ensuring you're always in the know about what's playing. TickIt combines convenience and entertainment, redefining the way you enjoy movies. Reserve your seats, customize your experience, and get ready for a cinema adventure like no other, all courtesy of TickIt!
